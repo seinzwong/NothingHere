@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "n_cka": 50000,
+  "n_insertion_deletion": 50000,
+  "separate_case_images": 2,
+  "case_gradcam_combinations": 42,
+  "notebooks": [
+    {
+      "path": "A2-cka-study.ipynb",
+      "sha256": "08b19c36ae0b2051953d0e0bd796315139ca4bccc568ff8bbec93f42166200e4",
+      "embedded_figures": 9,
+      "all_code_executed": true,
+      "errors": 0
+    },
+    {
+      "path": "submit\\A2-cka-study-ZH.ipynb",
+      "sha256": "08b19c36ae0b2051953d0e0bd796315139ca4bccc568ff8bbec93f42166200e4",
+      "embedded_figures": 9,
+      "all_code_executed": true,
+      "errors": 0
+    },
+    {
+      "path": "submit\\A2-cka-study-EN.ipynb",
+      "sha256": "27a0afcd83e2b0706e716b4068051211a219891f4763437022bddaf0f7628aa0",
+      "embedded_figures": 9,
+      "all_code_executed": true,
+      "errors": 0
+    }
+  ],
+  "full_result_hashes_unchanged": true,
+  "figures_identical_across_languages": true
+}

@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "n": 50000,
+  "parts": 782,
+  "precision": {
+    "engine_version": "full_validation_v2",
+    "model": "resnet50",
+    "images": 24,
+    "max_curve_error": 0.011187732219696045,
+    "p995_curve_error": 0.004646079149097204,
+    "mean_auc_error": 0.00025862766062266355,
+    "max_auc_error": 0.002015554303862299,
+    "fp16_passed": true,
+    "fp32_seconds": 14.375,
+    "fp16_seconds": 20.125,
+    "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+    "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+  },
+  "backward_warnings": []
+}

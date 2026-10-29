@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "n": 50000,
+  "scores": 147,
+  "sizes": [
+    1000,
+    5000,
+    10000,
+    25000,
+    50000
+  ],
+  "mismatches": 10,
+  "numeric_audit_max_error": 2.220446049250313e-16,
+  "method": "exact centered feature-space covariance, float64; no NxN matrices",
+  "results_sha256": "8c8979da6796cb02a61adff7c47933074b82b4dea16a48e0ff2d339de0c05fce"
+}

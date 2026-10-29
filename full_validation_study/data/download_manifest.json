@@ -1,0 +1,77 @@
+{
+  "repo": "ILSVRC/imagenet-1k",
+  "revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+  "shards": [
+    {
+      "file": "data/validation-00000-of-00014.parquet",
+      "size": 479922797,
+      "sha256": "5c5ebbf7dacc851d646cf343bf12412adfb79992ae4b4f245a6ed7bd935b7e96"
+    },
+    {
+      "file": "data/validation-00001-of-00014.parquet",
+      "size": 484701821,
+      "sha256": "eb6ded350ef050296dec56969998b4d2d51075439afd18a661ed5bc77fc46110"
+    },
+    {
+      "file": "data/validation-00002-of-00014.parquet",
+      "size": 471258806,
+      "sha256": "6c3d792bd864876e4617b26d2918178aba5fde869f95b2d2d330583467e5683d"
+    },
+    {
+      "file": "data/validation-00003-of-00014.parquet",
+      "size": 477547459,
+      "sha256": "b7f9d8ee5a265171ac245dbaa755b5621134fca5bcf510ad7203c6bcd8c11b9c"
+    },
+    {
+      "file": "data/validation-00004-of-00014.parquet",
+      "size": 477666614,
+      "sha256": "507f5443ad75165b5747cd453c13c91309a0141c277301865ee882c9aa2b95cf"
+    },
+    {
+      "file": "data/validation-00005-of-00014.parquet",
+      "size": 476033225,
+      "sha256": "0670d7fd838a6486da995ad4f0e09e4b4f5b56a129939dd04b18da1e88692b19"
+    },
+    {
+      "file": "data/validation-00006-of-00014.parquet",
+      "size": 479594555,
+      "sha256": "1ede790d2c28fa6f24a6b94f84b8f35e56285c39dd08de48eef04ab1adc3cac0"
+    },
+    {
+      "file": "data/validation-00007-of-00014.parquet",
+      "size": 475711811,
+      "sha256": "2721f55f6bff82dac74643a1dfb59b184c82c245f30548ddc86d2d14f174a920"
+    },
+    {
+      "file": "data/validation-00008-of-00014.parquet",
+      "size": 476090886,
+      "sha256": "5fc969226a2a246906a8ff919e5be09df5448ba542f28208c43fb3ec87e84168"
+    },
+    {
+      "file": "data/validation-00009-of-00014.parquet",
+      "size": 470165919,
+      "sha256": "3488c9aee81cef37c21e51f2264b9ceeb9f178ed5dd1d3231daad8423ebc6690"
+    },
+    {
+      "file": "data/validation-00010-of-00014.parquet",
+      "size": 475451921,
+      "sha256": "1bc05111b2dbf6cfe1005c209158faff4a660a462620867cfeb8681add012719"
+    },
+    {
+      "file": "data/validation-00011-of-00014.parquet",
+      "size": 471615473,
+      "sha256": "ec035e5b27ed626ed1f1988e60d76f341255b955c8b6485894669a4620112496"
+    },
+    {
+      "file": "data/validation-00012-of-00014.parquet",
+      "size": 492972415,
+      "sha256": "423890b715450706dade408a2e2cf0485d769b93511658a5692285e60b6a62f7"
+    },
+    {
+      "file": "data/validation-00013-of-00014.parquet",
+      "size": 484360024,
+      "sha256": "edeb352ae89966575738f5d7474c1a14b3bc0c275f4f39ed4d2b537b56c1cedc"
+    }
+  ],
+  "bytes_total": 6693093726
+}

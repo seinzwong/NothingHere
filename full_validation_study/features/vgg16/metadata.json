@@ -1,0 +1,81 @@
+{
+  "signature": {
+    "engine": "full_validation_v2",
+    "data": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+    "model": {
+      "weights": "VGG16_Weights.IMAGENET1K_V1",
+      "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "layers": [
+        "features.0",
+        "features.5",
+        "features.10",
+        "features.14",
+        "features.19",
+        "features.24",
+        "features.28"
+      ],
+      "url": "https://download.pytorch.org/models/vgg16-397923af.pth"
+    },
+    "precision": "FP32, channels_last, TF32 disabled",
+    "representation": "all-channel raw Conv2d GAP before subsequent BN/ReLU",
+    "torch": "2.9.1+cu130",
+    "torchvision": "0.24.1+cu130"
+  },
+  "complete": true,
+  "done": 50000,
+  "channels": [
+    64,
+    128,
+    256,
+    256,
+    512,
+    512,
+    512
+  ],
+  "raw_shapes": {
+    "0": [
+      64,
+      224,
+      224
+    ],
+    "1": [
+      128,
+      112,
+      112
+    ],
+    "2": [
+      256,
+      56,
+      56
+    ],
+    "3": [
+      256,
+      56,
+      56
+    ],
+    "4": [
+      512,
+      28,
+      28
+    ],
+    "5": [
+      512,
+      14,
+      14
+    ],
+    "6": [
+      512,
+      14,
+      14
+    ]
+  },
+  "sha256": {
+    "L01": "f09d0188883bd98edca4659924dff9e1120d5744cc6ad3884318f39cc859dc5a",
+    "L02": "986955d011d2389277d5b11ac17854fc2092d83a1be8373c7dcf723dc4ebaf8b",
+    "L03": "d402b9cb8f7e685bcb9e7c5d8308bd50e4b70ea5ca507e0bdec1b98d0dfa5700",
+    "L04": "b7d16c2481277cb44c253cba656ada8c43990476772dde9045eaf13e4645fb96",
+    "L05": "9116dd17f0dc908bbbf7071759627c69afdf0355da9ac32fef2d103d4f67a4a4",
+    "L06": "25383258fdddba0e958d943ccbc69036793652be83503152bdb9ab8de8e6011c",
+    "L07": "6a1ea86ecdcf7d9805c211ceb8634f80f1dab4acb539e687fbdabaccb01a37ed"
+  }
+}

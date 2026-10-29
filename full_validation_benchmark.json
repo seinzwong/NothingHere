@@ -1,0 +1,92 @@
+[
+  {
+    "model": "vgg16",
+    "dtype": "torch.float32",
+    "batch": 128,
+    "images_per_second": 649.7461928258238,
+    "max_fixed_target_prob_error": 0.0,
+    "mean_fixed_target_prob_error": 0.0,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "vgg16",
+    "dtype": "torch.float16",
+    "batch": 128,
+    "images_per_second": 1860.4651160574463,
+    "max_fixed_target_prob_error": 0.0029468536376953125,
+    "mean_fixed_target_prob_error": 0.0006854492239654064,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "vgg16",
+    "dtype": "torch.bfloat16",
+    "batch": 128,
+    "images_per_second": 1777.777778421655,
+    "max_fixed_target_prob_error": 0.02671295404434204,
+    "mean_fixed_target_prob_error": 0.006123031955212355,
+    "top1_agreement": 0.9375,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "resnet50",
+    "dtype": "torch.float32",
+    "batch": 128,
+    "images_per_second": 1203.0075190454995,
+    "max_fixed_target_prob_error": 0.0,
+    "mean_fixed_target_prob_error": 0.0,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "resnet50",
+    "dtype": "torch.float16",
+    "batch": 128,
+    "images_per_second": 3720.9302321148925,
+    "max_fixed_target_prob_error": 0.006459146738052368,
+    "mean_fixed_target_prob_error": 0.0008871089667081833,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "resnet50",
+    "dtype": "torch.bfloat16",
+    "batch": 128,
+    "images_per_second": 3422.4598902868393,
+    "max_fixed_target_prob_error": 0.027803540229797363,
+    "mean_fixed_target_prob_error": 0.005328786559402943,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "mobilenet_v2",
+    "dtype": "torch.float32",
+    "batch": 128,
+    "images_per_second": 4102.564103641767,
+    "max_fixed_target_prob_error": 0.0,
+    "mean_fixed_target_prob_error": 0.0,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "mobilenet_v2",
+    "dtype": "torch.float16",
+    "batch": 128,
+    "images_per_second": 8205.128207283535,
+    "max_fixed_target_prob_error": 0.009190678596496582,
+    "mean_fixed_target_prob_error": 0.002098504453897476,
+    "top1_agreement": 1.0,
+    "peak_vram_gib": 12.761440753936768
+  },
+  {
+    "model": "mobilenet_v2",
+    "dtype": "torch.bfloat16",
+    "batch": 128,
+    "images_per_second": 10158.730183058586,
+    "max_fixed_target_prob_error": 0.0971328616142273,
+    "mean_fixed_target_prob_error": 0.017402619123458862,
+    "top1_agreement": 0.96875,
+    "peak_vram_gib": 12.761440753936768
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-29T11:49:27+0800",
+  "python_executable": "C:\\Anaconda3\\envs\\5070ti\\python.exe",
+  "python_version": "3.10.19",
+  "torch": "2.9.1+cu130",
+  "torchvision": "0.24.1+cu130",
+  "cuda_runtime": "13.0",
+  "cuda_available": true,
+  "cpu": "AMD Ryzen 9 9900X3D 12-Core Processor",
+  "cpu_physical_cores": 12,
+  "cpu_logical_cores": 24,
+  "ram_gib": 47.113189697265625,
+  "disk_free_gib": 789.8003005981445,
+  "models": [
+    {
+      "name": "vgg16",
+      "weights": "VGG16_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/vgg16-397923af.pth",
+      "path": ".cache\\torch\\hub\\checkpoints\\vgg16-397923af.pth",
+      "bytes": 553433881,
+      "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "smoke_test_device": "cuda",
+      "output_shape": [
+        1,
+        1000
+      ],
+      "finite": true
+    },
+    {
+      "name": "resnet50",
+      "weights": "ResNet50_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+      "path": ".cache\\torch\\hub\\checkpoints\\resnet50-0676ba61.pth",
+      "bytes": 102530333,
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "smoke_test_device": "cuda",
+      "output_shape": [
+        1,
+        1000
+      ],
+      "finite": true
+    },
+    {
+      "name": "mobilenet_v2",
+      "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth",
+      "path": ".cache\\torch\\hub\\checkpoints\\mobilenet_v2-b0353104.pth",
+      "bytes": 14212972,
+      "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+      "smoke_test_device": "cuda",
+      "output_shape": [
+        1,
+        1000
+      ],
+      "finite": true
+    }
+  ],
+  "dataset": {
+    "name": "ImageNet-1K",
+    "ready": true,
+    "repo": "ILSVRC/imagenet-1k",
+    "revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+    "split": "validation",
+    "n": 1000,
+    "classes": 1000,
+    "manifest": "cka_study/imagenet_subset/manifest.json",
+    "manifest_sha256": "60c4d2e53e7a536993d29f6d2b20961ee027ce8ecc516c3707da78e5a81fb560",
+    "selection": "first eligible unique bytes per class in stream order",
+    "scanned_rows": 8115,
+    "cifar10_downloaded": false
+  },
+  "complete": true,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "vram_gib": 15.92047119140625,
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "models_ready": true,
+  "experiment": {
+    "notebook": "A2-cka-study.ipynb",
+    "complete": true,
+    "main_scores": 147,
+    "formula_checks_passed": true,
+    "numeric_audit": {
+      "combinations": 9,
+      "max_absolute_error": 1.887379141862766e-15
+    },
+    "insertion_deletion": {
+      "complete": true,
+      "images": 100,
+      "gradcam_combinations": 2100,
+      "random_controls": 300,
+      "config": "cka_study/insertion_deletion/experiment_config.json"
+    }
+  },
+  "submission_notebooks": [
+    "submit/A2-cka-study-ZH.ipynb",
+    "submit/A2-cka-study-EN.ipynb"
+  ],
+  "full_validation_job": {
+    "status": "complete",
+    "complete": true,
+    "n_cka": 50000,
+    "n_insertion_deletion": 50000,
+    "results": "full_validation_study/complete.json",
+    "notebook_validation": "submit/submission_validation.json"
+  }
+}

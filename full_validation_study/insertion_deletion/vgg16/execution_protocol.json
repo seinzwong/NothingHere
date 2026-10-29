@@ -1,0 +1,20 @@
+{
+  "precision": {
+    "engine_version": "full_validation_v2",
+    "model": "vgg16",
+    "images": 24,
+    "max_curve_error": 0.00832754373550415,
+    "p995_curve_error": 0.003295071190223098,
+    "mean_auc_error": 9.596823063203825e-05,
+    "max_auc_error": 0.0007586930099366396,
+    "fp16_passed": true,
+    "fp32_seconds": 36.265000000130385,
+    "fp16_seconds": 11.812999999849126,
+    "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+    "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+  },
+  "forward_equivalence_error": 0.0,
+  "batch_size_perturbation": 128,
+  "cam_batch_size": 8,
+  "chunk_size": 64
+}

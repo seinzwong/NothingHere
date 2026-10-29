@@ -1,0 +1,6 @@
+{
+  "exact_feature_space_vs_original_all147_max_error": 2.4424906541753444e-15,
+  "toy_insertion_deletion_direction_and_fractions_passed": true,
+  "zero_cam_random_rank_equivalence_passed": true,
+  "full_NxN_matrix_required": false
+}

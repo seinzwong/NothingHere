@@ -1,0 +1,134 @@
+{
+  "complete": true,
+  "inputs": [
+    {
+      "id": "dog",
+      "sha256": "f99c5d853926df86201b9b9517167375efb91e0c53245d4f6f41dc6d884e08c5",
+      "original_size": [
+        247,
+        270
+      ],
+      "resized_size": [
+        205,
+        224
+      ],
+      "offset": [
+        9,
+        0
+      ]
+    },
+    {
+      "id": "cat",
+      "sha256": "6455465c5f5b400f2e008ce037abb778125ab8c1a43ecbd93fcecdbcf82f2d15",
+      "original_size": [
+        465,
+        705
+      ],
+      "resized_size": [
+        148,
+        224
+      ],
+      "offset": [
+        38,
+        0
+      ]
+    }
+  ],
+  "models": [
+    {
+      "model": "vgg16",
+      "sha256": "73c1a8bf9579a1d4340ecaba0c5597a6e8c87a82c8ffb55a18d62bed0546824c",
+      "targets": [
+        151,
+        285
+      ],
+      "original_probability": [
+        0.5547245740890503,
+        0.27954187989234924
+      ],
+      "zero_maps": 0,
+      "precision": "FP32",
+      "layers": [
+        "features.0",
+        "features.5",
+        "features.10",
+        "features.14",
+        "features.19",
+        "features.24",
+        "features.28"
+      ],
+      "weights": "VGG16_Weights.IMAGENET1K_V1",
+      "backward_warnings": [
+        "adaptive_avg_pool2d_backward_cuda does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation."
+      ]
+    },
+    {
+      "model": "resnet50",
+      "sha256": "3a165142a677c946f6d968b74b4f2b71aa34871bff992b50a242327f968fd2bc",
+      "targets": [
+        174,
+        285
+      ],
+      "original_probability": [
+        0.19104011356830597,
+        0.42762061953544617
+      ],
+      "zero_maps": 0,
+      "precision": "FP32",
+      "layers": [
+        "conv1",
+        "layer1.2.conv2",
+        "layer2.2.conv1",
+        "layer3.0.conv3",
+        "layer3.3.conv2",
+        "layer4.0.conv1",
+        "layer4.2.conv3"
+      ],
+      "weights": "ResNet50_Weights.IMAGENET1K_V1",
+      "backward_warnings": []
+    },
+    {
+      "model": "mobilenet_v2",
+      "sha256": "903d5851e54db4418958241eff913549f976aae9f7408f85cf633732192c2c74",
+      "targets": [
+        151,
+        285
+      ],
+      "original_probability": [
+        0.3860950469970703,
+        0.6023451089859009
+      ],
+      "zero_maps": 0,
+      "precision": "FP32",
+      "layers": [
+        "features.0.0",
+        "features.4.conv.0.0",
+        "features.6.conv.2",
+        "features.9.conv.2",
+        "features.12.conv.1.0",
+        "features.15.conv.1.0",
+        "features.18.0"
+      ],
+      "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+      "backward_warnings": []
+    }
+  ],
+  "n_images": 2,
+  "gradcam_combinations": 42,
+  "random_controls": 6,
+  "steps": 21,
+  "fixed_original_top1": true,
+  "preprocessing": "bilinear aspect-preserving resize, centered letterbox 224, RGB(124,116,104), ImageNet normalization",
+  "baseline": "zero normalized tensor (ImageNet mean RGB)",
+  "seed": 5495,
+  "random_row_ids": [
+    1000000,
+    1000001
+  ],
+  "included_in_full_validation_statistics": false,
+  "two_sample_cka_computed": false,
+  "seconds": 12.125,
+  "finished_at": "2026-10-29T20:14:26+0800",
+  "summary_sha256": "fc5118f9784227a9f93ce6b0a8a521eff8ef97225c564fbf18f21dc9991e02ff",
+  "audit": "fixed endpoints, zero-map random equivalence, finite curves and manual trapezoidal AUC checked"
+}

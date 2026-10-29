@@ -1,0 +1,10 @@
+a,b,slot,error
+vgg16,resnet50,1,0.0
+vgg16,resnet50,4,0.0
+vgg16,resnet50,7,5.551115123125783e-17
+vgg16,mobilenet_v2,1,1.1102230246251565e-16
+vgg16,mobilenet_v2,4,0.0
+vgg16,mobilenet_v2,7,5.551115123125783e-17
+resnet50,mobilenet_v2,1,0.0
+resnet50,mobilenet_v2,4,0.0
+resnet50,mobilenet_v2,7,2.220446049250313e-16

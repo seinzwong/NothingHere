@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "files_checked": 2500,
+  "bytes": 308360219,
+  "max_file_bytes": 15136632,
+  "credential_pattern_scan_passed": true,
+  "json_parse_passed": true,
+  "github_100MiB_file_limit_passed": true,
+  "all_2346_original_shard_jsons_included": true
+}

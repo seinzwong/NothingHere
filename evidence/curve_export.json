@@ -1,0 +1,228 @@
+{
+  "complete": true,
+  "created_at": "2026-10-29T20:36:35+0800",
+  "models": [
+    {
+      "model": "vgg16",
+      "n": 50000,
+      "original_shards_verified": 782,
+      "manual_auc_max_error": 0.0,
+      "exported_curves": [
+        {
+          "path": "evidence/curves/vgg16/curves_00000_04096.npz",
+          "sha256": "06272a6dc73e51d4632195d634e3b3244c3354f712df82f98edece06e70b6b55",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_04096_08192.npz",
+          "sha256": "62957e0bcc30a7efc6c6e435201d9aedfb35d358ecb8a96b9f56d6f6d969dc63",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_08192_12288.npz",
+          "sha256": "7b6691c8118e9b994547c78ead382045faf3123fa5af9ad66b2b9cc990d0d934",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_12288_16384.npz",
+          "sha256": "f448bdf5643c232492952abe75e6773eb2e3a64bdb4c7d56f439442adfdac5f8",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_16384_20480.npz",
+          "sha256": "375d2ea26aa669736331e76c059432b385688090c7f48bef0a30815f3ba1c013",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_20480_24576.npz",
+          "sha256": "2342fc1366ce95335b7b8c5c1f04a9616978cd37a0d4b7521615f6bd5cf5304e",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_24576_28672.npz",
+          "sha256": "005c8c036648c6f8bc4753f2ee1629f1fc91286578b87ba32a1b541f09983eec",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_28672_32768.npz",
+          "sha256": "5993953505b8c9b135f91568572ec3a686f8c20025fe530f636a020db9148824",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_32768_36864.npz",
+          "sha256": "923efe752c49861e4b6c988180c9b8d0d9729036d5899a9c2d30b4c24d6097a4",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_36864_40960.npz",
+          "sha256": "3a4329c00dba6a83a142ebaefe6c9f6562c4eee8f8aa17e003be7943714352fa",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_40960_45056.npz",
+          "sha256": "a6ebc2c1e485ed4cc8d68dfec2d1fe048bdbf656bcc8dc67ee88bd5a2d65d4e2",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_45056_49152.npz",
+          "sha256": "91a2e984f149a8104b226d6e3a429ecfcb4a5914689fcccdb168c61bde884c40",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/vgg16/curves_49152_50000.npz",
+          "sha256": "5787d3ea691b789675a2c4cf43df02540762317941657118ec9ff1ec0c71fbb5",
+          "n": 848
+        }
+      ]
+    },
+    {
+      "model": "resnet50",
+      "n": 50000,
+      "original_shards_verified": 782,
+      "manual_auc_max_error": 0.0,
+      "exported_curves": [
+        {
+          "path": "evidence/curves/resnet50/curves_00000_04096.npz",
+          "sha256": "b1257fa74cf0e4432f39585044d2cccb3d4dee1af626958f251cade8ac594a61",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_04096_08192.npz",
+          "sha256": "981686521cc769d2d1f4a4436017eed796adf2650808ab65a3ac10c5d8bd040e",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_08192_12288.npz",
+          "sha256": "f14d6e568b61a51baa0934ee459b0b967545713a12e55f0ae23b99e01558f6ad",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_12288_16384.npz",
+          "sha256": "f68b5e66e9dc459637b47c824903ebf4f31cad495a8d7305c87ab59662de5493",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_16384_20480.npz",
+          "sha256": "52500ee88f234f6f3b095e31b649c3b42b676cfc1788bee7aef877127b37a665",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_20480_24576.npz",
+          "sha256": "bf227346eebd82adc2839bb528e1a1c0832ff7d8a203577273605c73db849f3e",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_24576_28672.npz",
+          "sha256": "3ca765515cf279c600fd217dc6818b1fcc0b7801fa040ef1c679db7baa5b5f62",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_28672_32768.npz",
+          "sha256": "0fd282f6a8edb988ef217d5663048bf4762f9834f061b94a231edb1c35731230",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_32768_36864.npz",
+          "sha256": "476cae61ebfce2e8f452fcfa71cc8074713e8741d190664feafac4f7ec2b54d3",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_36864_40960.npz",
+          "sha256": "fc397f628d05ae8e1ad0c762d1c7c0d7c0858f7f96cee0bc4246bc95f6ab1fa3",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_40960_45056.npz",
+          "sha256": "cc0cb99824454bfabe06f158ec9127a21ff15de97836be540e24eb7cbb9b85bc",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_45056_49152.npz",
+          "sha256": "c7ab67faff0542f56f99bf05a377a1fa22ad4b0a800ec9edaeb72dc4acd427d6",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/resnet50/curves_49152_50000.npz",
+          "sha256": "47c4709266d207a398cc65d562315423cc2763b2f3b9f6d568f9a2f7bf513783",
+          "n": 848
+        }
+      ]
+    },
+    {
+      "model": "mobilenet_v2",
+      "n": 50000,
+      "original_shards_verified": 782,
+      "manual_auc_max_error": 0.0,
+      "exported_curves": [
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_00000_04096.npz",
+          "sha256": "cd81e912a4d00167cbb1b2573a35086d430c75c585f0f9e87372959fe2eb2f2b",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_04096_08192.npz",
+          "sha256": "a4c8616830977a3ba669a459b565a46b4c1d3c2bd2b3c3208673fbd359aa8e0d",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_08192_12288.npz",
+          "sha256": "637ec556ac9a1e4f0b6b68425a75d02f35e06e1bd283af3c20cd1db6083974de",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_12288_16384.npz",
+          "sha256": "ecf04e727545d0007fbf00f100297a26c9975e5bbb16198840ed6460d0aae720",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_16384_20480.npz",
+          "sha256": "8cd7b8d6896b1b34737d3feb4751c9ae28ab14ae6d197745b262f2a65384f99e",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_20480_24576.npz",
+          "sha256": "43070a745aad19bd11459261a0cab0b391fb41c1efa5f4ef360ac6f2e8880382",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_24576_28672.npz",
+          "sha256": "d23bf3bad93322ae4c4cdb968c3e62953336273d24857898188a9844a963c98f",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_28672_32768.npz",
+          "sha256": "b0f81cf601e7ddd0a591222e63f5826c43e6de9c42d25c19b29abb5209962d57",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_32768_36864.npz",
+          "sha256": "0088d2a30894f2a571cc55255d824285b401b5bd1309f76142fdc5a2cc4c94df",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_36864_40960.npz",
+          "sha256": "57192060c56a89500eae83704cfda0878e54436a9d3ac31437f5fbc977974b37",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_40960_45056.npz",
+          "sha256": "c93412986dc85ad7d39f2e4c20cc07d66e6b3c7384122cbf92eb34f526f24dae",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_45056_49152.npz",
+          "sha256": "eba52d38943518d530c3f4ed4b1fe43ba154ce5d29161d4d2b07a5f631a24572",
+          "n": 4096
+        },
+        {
+          "path": "evidence/curves/mobilenet_v2/curves_49152_50000.npz",
+          "sha256": "d83d4e03ded8b5b7697f39fb7dbf03995141ce806d7514a6a9c7ba2ad750ef40",
+          "n": 848
+        }
+      ]
+    }
+  ],
+  "n_per_model": 50000,
+  "lossless_float32_curves": true,
+  "original_shard_checksums_verified": 2346
+}

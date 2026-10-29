@@ -1,0 +1,432 @@
+{
+  "complete": true,
+  "config": {
+    "engine_version": "full_validation_v2",
+    "dataset": "ILSVRC/imagenet-1k",
+    "revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+    "split": "validation",
+    "n_cka": 50000,
+    "n_insertion_deletion": 50000,
+    "layers": 7,
+    "seed": 5495,
+    "counts": [
+      0,
+      2509,
+      5018,
+      7526,
+      10035,
+      12544,
+      15053,
+      17562,
+      20070,
+      22579,
+      25088,
+      27597,
+      30106,
+      32614,
+      35123,
+      37632,
+      40141,
+      42650,
+      45158,
+      47667,
+      50176
+    ],
+    "preprocess": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+    "target": "FP32 original Top-1, fixed across all perturbations",
+    "baseline": "ImageNet mean RGB (zero normalized tensor)",
+    "auc": "probability trapezoidal area",
+    "gradcam_precision": "FP32",
+    "perturbation_precision": "FP16 only after measured pilot gate; otherwise FP32",
+    "cam_backward": "FP32 CUDA autograd; deterministic algorithms off in the performance stage; no bitwise guarantee",
+    "id_cuda_performance": "cuDNN benchmark on; deterministic algorithms off; fixed seeds, no bitwise guarantee",
+    "cka": "exact centered feature-space covariance, float64; no NxN matrices",
+    "random_ties": "seeded per-image random initial order; stable descending CAM sort",
+    "bootstrap": "1000 paired class-cluster resamples; exploratory class-composition sensitivity"
+  },
+  "n_cka": 50000,
+  "n_insertion_deletion": 50000,
+  "n_models": 3,
+  "cka_scores": 147,
+  "gradcam_combinations": 1050000,
+  "random_controls": 150000,
+  "curve_points_including_shared_endpoints": 50400000,
+  "data_manifest_sha256": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+  "model_resources": {
+    "vgg16": {
+      "weights": "VGG16_Weights.IMAGENET1K_V1",
+      "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "layers": [
+        "features.0",
+        "features.5",
+        "features.10",
+        "features.14",
+        "features.19",
+        "features.24",
+        "features.28"
+      ],
+      "url": "https://download.pytorch.org/models/vgg16-397923af.pth"
+    },
+    "resnet50": {
+      "weights": "ResNet50_Weights.IMAGENET1K_V1",
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "layers": [
+        "conv1",
+        "layer1.2.conv2",
+        "layer2.2.conv1",
+        "layer3.0.conv3",
+        "layer3.3.conv2",
+        "layer4.0.conv1",
+        "layer4.2.conv3"
+      ],
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth"
+    },
+    "mobilenet_v2": {
+      "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+      "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+      "layers": [
+        "features.0.0",
+        "features.4.conv.0.0",
+        "features.6.conv.2",
+        "features.9.conv.2",
+        "features.12.conv.1.0",
+        "features.15.conv.1.0",
+        "features.18.0"
+      ],
+      "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth"
+    }
+  },
+  "precision": {
+    "vgg16": {
+      "engine_version": "full_validation_v2",
+      "model": "vgg16",
+      "images": 24,
+      "max_curve_error": 0.00832754373550415,
+      "p995_curve_error": 0.003295071190223098,
+      "mean_auc_error": 9.596823063203825e-05,
+      "max_auc_error": 0.0007586930099366396,
+      "fp16_passed": true,
+      "fp32_seconds": 36.265000000130385,
+      "fp16_seconds": 11.812999999849126,
+      "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+      "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+    },
+    "resnet50": {
+      "engine_version": "full_validation_v2",
+      "model": "resnet50",
+      "images": 24,
+      "max_curve_error": 0.011187732219696045,
+      "p995_curve_error": 0.004646079149097204,
+      "mean_auc_error": 0.00025862766062266355,
+      "max_auc_error": 0.002015554303862299,
+      "fp16_passed": true,
+      "fp32_seconds": 14.375,
+      "fp16_seconds": 20.125,
+      "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+      "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+    },
+    "mobilenet_v2": {
+      "engine_version": "full_validation_v2",
+      "model": "mobilenet_v2",
+      "images": 24,
+      "max_curve_error": 0.01628202199935913,
+      "p995_curve_error": 0.009429672732949257,
+      "mean_auc_error": 0.0005411111236627685,
+      "max_auc_error": 0.0038716931739706806,
+      "fp16_passed": true,
+      "fp32_seconds": 13.015000000130385,
+      "fp16_seconds": 25.015999999828637,
+      "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+      "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+    }
+  },
+  "feature_metadata": {
+    "vgg16": {
+      "signature": {
+        "engine": "full_validation_v2",
+        "data": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+        "model": {
+          "weights": "VGG16_Weights.IMAGENET1K_V1",
+          "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+          "layers": [
+            "features.0",
+            "features.5",
+            "features.10",
+            "features.14",
+            "features.19",
+            "features.24",
+            "features.28"
+          ],
+          "url": "https://download.pytorch.org/models/vgg16-397923af.pth"
+        },
+        "precision": "FP32, channels_last, TF32 disabled",
+        "representation": "all-channel raw Conv2d GAP before subsequent BN/ReLU",
+        "torch": "2.9.1+cu130",
+        "torchvision": "0.24.1+cu130"
+      },
+      "complete": true,
+      "done": 50000,
+      "channels": [
+        64,
+        128,
+        256,
+        256,
+        512,
+        512,
+        512
+      ],
+      "raw_shapes": {
+        "0": [
+          64,
+          224,
+          224
+        ],
+        "1": [
+          128,
+          112,
+          112
+        ],
+        "2": [
+          256,
+          56,
+          56
+        ],
+        "3": [
+          256,
+          56,
+          56
+        ],
+        "4": [
+          512,
+          28,
+          28
+        ],
+        "5": [
+          512,
+          14,
+          14
+        ],
+        "6": [
+          512,
+          14,
+          14
+        ]
+      },
+      "sha256": {
+        "L01": "f09d0188883bd98edca4659924dff9e1120d5744cc6ad3884318f39cc859dc5a",
+        "L02": "986955d011d2389277d5b11ac17854fc2092d83a1be8373c7dcf723dc4ebaf8b",
+        "L03": "d402b9cb8f7e685bcb9e7c5d8308bd50e4b70ea5ca507e0bdec1b98d0dfa5700",
+        "L04": "b7d16c2481277cb44c253cba656ada8c43990476772dde9045eaf13e4645fb96",
+        "L05": "9116dd17f0dc908bbbf7071759627c69afdf0355da9ac32fef2d103d4f67a4a4",
+        "L06": "25383258fdddba0e958d943ccbc69036793652be83503152bdb9ab8de8e6011c",
+        "L07": "6a1ea86ecdcf7d9805c211ceb8634f80f1dab4acb539e687fbdabaccb01a37ed"
+      }
+    },
+    "resnet50": {
+      "signature": {
+        "engine": "full_validation_v2",
+        "data": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+        "model": {
+          "weights": "ResNet50_Weights.IMAGENET1K_V1",
+          "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+          "layers": [
+            "conv1",
+            "layer1.2.conv2",
+            "layer2.2.conv1",
+            "layer3.0.conv3",
+            "layer3.3.conv2",
+            "layer4.0.conv1",
+            "layer4.2.conv3"
+          ],
+          "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth"
+        },
+        "precision": "FP32, channels_last, TF32 disabled",
+        "representation": "all-channel raw Conv2d GAP before subsequent BN/ReLU",
+        "torch": "2.9.1+cu130",
+        "torchvision": "0.24.1+cu130"
+      },
+      "complete": true,
+      "done": 50000,
+      "channels": [
+        64,
+        64,
+        128,
+        1024,
+        256,
+        512,
+        2048
+      ],
+      "raw_shapes": {
+        "0": [
+          64,
+          112,
+          112
+        ],
+        "1": [
+          64,
+          56,
+          56
+        ],
+        "2": [
+          128,
+          28,
+          28
+        ],
+        "3": [
+          1024,
+          14,
+          14
+        ],
+        "4": [
+          256,
+          14,
+          14
+        ],
+        "5": [
+          512,
+          14,
+          14
+        ],
+        "6": [
+          2048,
+          7,
+          7
+        ]
+      },
+      "sha256": {
+        "L01": "30afec61a24997a9289fd26b10dbde760edee7594a03f2bc55b0ab16234af4ba",
+        "L02": "f3dfb5b75c10a25510433aa020f1aa30cdd62fb7cec2b26eabc196edc9649db6",
+        "L03": "efa2f9700c4c7d6a65b4fd553cfa78b4bda4847b705f41965506957514640dce",
+        "L04": "8e0c7b074bb1183c18f9ef04de7b98e7844bc2b6173c7cfe9398e6c94195f211",
+        "L05": "3968f5b3e72618d71b4dc3990bcabbd3ab59f0e3e039b949dfcd90da97a60eb9",
+        "L06": "03816335e9df064ad624545a8eafdf4a918f1d33fe3a977d4d9ee078d6e3f89c",
+        "L07": "012d68e1e68de80281c28b5a6fd1bbc1c2e2c25d5c8d1841f6c930b950c3814a"
+      }
+    },
+    "mobilenet_v2": {
+      "signature": {
+        "engine": "full_validation_v2",
+        "data": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+        "model": {
+          "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+          "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+          "layers": [
+            "features.0.0",
+            "features.4.conv.0.0",
+            "features.6.conv.2",
+            "features.9.conv.2",
+            "features.12.conv.1.0",
+            "features.15.conv.1.0",
+            "features.18.0"
+          ],
+          "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth"
+        },
+        "precision": "FP32, channels_last, TF32 disabled",
+        "representation": "all-channel raw Conv2d GAP before subsequent BN/ReLU",
+        "torch": "2.9.1+cu130",
+        "torchvision": "0.24.1+cu130"
+      },
+      "complete": true,
+      "done": 50000,
+      "channels": [
+        32,
+        144,
+        32,
+        64,
+        576,
+        960,
+        1280
+      ],
+      "raw_shapes": {
+        "0": [
+          32,
+          112,
+          112
+        ],
+        "1": [
+          144,
+          56,
+          56
+        ],
+        "2": [
+          32,
+          28,
+          28
+        ],
+        "3": [
+          64,
+          14,
+          14
+        ],
+        "4": [
+          576,
+          14,
+          14
+        ],
+        "5": [
+          960,
+          7,
+          7
+        ],
+        "6": [
+          1280,
+          7,
+          7
+        ]
+      },
+      "sha256": {
+        "L01": "3fe313e2513cb24eaf08ae8ad328be1fe5f766a4693bdb7f65200f76ecee5771",
+        "L02": "c5343e32e72737534f02ea1db5a3b851970229533d9a47934a17ade029ff2edd",
+        "L03": "d10ede137da39b185d8ac72ff12fdeb5737272ca87bcfb08a4b82854be0799aa",
+        "L04": "1e5991a245d5a5bc3e15b8047cca44867dc178592fce7bc3b44e55626ed82572",
+        "L05": "261ea5e87666b2f2d506f856ee1acde87f1f8dd3d9150740d37732b71eab1681",
+        "L06": "165c8f2d21388063708c47570a247a227edd89ee512397fde7aae5fbc4ff1c88",
+        "L07": "4119432e4489acf8b08b7dc2fb718b1e2418ed350ecc7991125d00ebb99b81f4"
+      }
+    }
+  },
+  "id_audit": [
+    {
+      "model": "vgg16",
+      "n": 50000,
+      "zero_maps": 221,
+      "fp32_fallback_images": 6,
+      "max_full_input_probability_error": 0.009779751300811768,
+      "curve_endpoint_checks": true,
+      "manual_auc_checks": true
+    },
+    {
+      "model": "resnet50",
+      "n": 50000,
+      "zero_maps": 260,
+      "fp32_fallback_images": 6,
+      "max_full_input_probability_error": 0.009931206703186035,
+      "curve_endpoint_checks": true,
+      "manual_auc_checks": true
+    },
+    {
+      "model": "mobilenet_v2",
+      "n": 50000,
+      "zero_maps": 4219,
+      "fp32_fallback_images": 234,
+      "max_full_input_probability_error": 0.009987324476242065,
+      "curve_endpoint_checks": true,
+      "manual_auc_checks": true
+    }
+  ],
+  "results_sha256": {
+    "cka_complete.json": "16a075684d2ddb4de893f7bd32a6124d3a7c4b8ecc1d37274b423a4bc511657b",
+    "cka_controls.csv": "b87ba2561f8506250875a52963f30b4141ce8159f4695a3d81c6439332fa2c94",
+    "cka_main.csv": "15de833e6f34156fb95abfc93b8c9ccf45949b50e186a449b0dad86dc030cd4c",
+    "cka_numeric_audit.csv": "edc350793e01562317ba48de187d7cc9060cd5abbdeacaa2543e976571bd2c50",
+    "cka_results.npz": "8c8979da6796cb02a61adff7c47933074b82b4dea16a48e0ff2d339de0c05fce",
+    "id_mean_curves.npz": "d6907286ad14a975f2fea2fbbfb22687eb2c8b91123323b6437062abf208dac3",
+    "id_numeric_audit.csv": "bc9b35cc51b0edc5c00ba648a26841e935d8068fcc23939a1413a52105d120db",
+    "id_summary.csv": "d097a81aea5a7f4c946023c253cc854b55f3791fff6c78094a7daf57ff4be932",
+    "mobilenet_v2_per_image_auc.npz": "564d922f61151eae60a8a0b7b93a728eed60b0cf6a3fb187c116c19aec4aaa42",
+    "resnet50_per_image_auc.npz": "add1c867229a958a85cd96f4da3074ab39a32a19ff0bb3d5c9e2cf490db3587f",
+    "vgg16_per_image_auc.npz": "3366e8a12b6a3853e2c74c4aa47294b84ee765a7379c5f914f46e2e73ab8a36c"
+  },
+  "seconds_this_invocation": 9220.578,
+  "finished_at": "2026-10-29T19:34:16+0800"
+}

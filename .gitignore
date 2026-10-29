@@ -1,0 +1,25 @@
+# Credentials, downloads and machine-local transient files
+.cache/
+**/hf_cache/
+**/__pycache__/
+*.pyc
+*.pid
+*.lock
+*.tmp*
+*.invalid.*
+kernel_connection.json
+.env
+.env.*
+token
+stored_tokens
+_publish/
+# Gated ImageNet payloads and large reconstructible arrays remain local
+full_validation_study/data/images/
+full_validation_study/data/parquet/
+cka_study/imagenet_subset/images/
+full_validation_study/features/**/*.npy
+full_validation_study/insertion_deletion/**/part_*.npz
+*.pth
+*.pt
+/data/
+tmp/

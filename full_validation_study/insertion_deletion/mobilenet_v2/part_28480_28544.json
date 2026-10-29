@@ -1,0 +1,10 @@
+{
+  "sha256": "9ec0c9e3bdf27b67e74bf806bc2bd7e661057963565cbdcadc0ca4a680f81882",
+  "start": 28480,
+  "end": 28544,
+  "n": 64,
+  "zero_maps": 4,
+  "fp32_fallback_images": 2,
+  "backward_warnings": [],
+  "fixed_target": true
+}

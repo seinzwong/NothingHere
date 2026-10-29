@@ -1,0 +1,81 @@
+{
+  "signature": {
+    "engine": "full_validation_v2",
+    "data": "08aabff35c87c6786b198790d4a02aaf9fa41926edb6e4ef4597f2b37c9bcd1e",
+    "model": {
+      "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+      "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+      "layers": [
+        "features.0.0",
+        "features.4.conv.0.0",
+        "features.6.conv.2",
+        "features.9.conv.2",
+        "features.12.conv.1.0",
+        "features.15.conv.1.0",
+        "features.18.0"
+      ],
+      "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth"
+    },
+    "precision": "FP32, channels_last, TF32 disabled",
+    "representation": "all-channel raw Conv2d GAP before subsequent BN/ReLU",
+    "torch": "2.9.1+cu130",
+    "torchvision": "0.24.1+cu130"
+  },
+  "complete": true,
+  "done": 50000,
+  "channels": [
+    32,
+    144,
+    32,
+    64,
+    576,
+    960,
+    1280
+  ],
+  "raw_shapes": {
+    "0": [
+      32,
+      112,
+      112
+    ],
+    "1": [
+      144,
+      56,
+      56
+    ],
+    "2": [
+      32,
+      28,
+      28
+    ],
+    "3": [
+      64,
+      14,
+      14
+    ],
+    "4": [
+      576,
+      14,
+      14
+    ],
+    "5": [
+      960,
+      7,
+      7
+    ],
+    "6": [
+      1280,
+      7,
+      7
+    ]
+  },
+  "sha256": {
+    "L01": "3fe313e2513cb24eaf08ae8ad328be1fe5f766a4693bdb7f65200f76ecee5771",
+    "L02": "c5343e32e72737534f02ea1db5a3b851970229533d9a47934a17ade029ff2edd",
+    "L03": "d10ede137da39b185d8ac72ff12fdeb5737272ca87bcfb08a4b82854be0799aa",
+    "L04": "1e5991a245d5a5bc3e15b8047cca44867dc178592fce7bc3b44e55626ed82572",
+    "L05": "261ea5e87666b2f2d506f856ee1acde87f1f8dd3d9150740d37732b71eab1681",
+    "L06": "165c8f2d21388063708c47570a247a227edd89ee512397fde7aae5fbc4ff1c88",
+    "L07": "4119432e4489acf8b08b7dc2fb718b1e2418ed350ecc7991125d00ebb99b81f4"
+  }
+}

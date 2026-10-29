@@ -1,0 +1,14 @@
+{
+  "engine_version": "full_validation_v2",
+  "model": "mobilenet_v2",
+  "images": 24,
+  "max_curve_error": 0.01628202199935913,
+  "p995_curve_error": 0.009429672732949257,
+  "mean_auc_error": 0.0005411111236627685,
+  "max_auc_error": 0.0038716931739706806,
+  "fp16_passed": true,
+  "fp32_seconds": 13.015000000130385,
+  "fp16_seconds": 25.015999999828637,
+  "gate": "max curve < .05; 99.5% curve < .015; mean AUC < .003; max AUC < .015",
+  "meaning": "empirical precision check, not a worst-case error guarantee over all validation images"
+}

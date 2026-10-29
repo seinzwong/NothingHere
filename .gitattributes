@@ -1,0 +1,2 @@
+# Preserve byte-exact audit hashes across Windows/Linux checkouts.
+* -text

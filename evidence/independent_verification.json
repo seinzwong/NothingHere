@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "model": "vgg16",
+      "images": 50000,
+      "all_auc_recomputed": true,
+      "all_summary_and_ci_recomputed": true,
+      "shard_records": 782
+    },
+    {
+      "model": "resnet50",
+      "images": 50000,
+      "all_auc_recomputed": true,
+      "all_summary_and_ci_recomputed": true,
+      "shard_records": 782
+    },
+    {
+      "model": "mobilenet_v2",
+      "images": 50000,
+      "all_auc_recomputed": true,
+      "all_summary_and_ci_recomputed": true,
+      "shard_records": 782
+    }
+  ],
+  "cka_scope": "Saved CKA score count, hashes and original numeric audit checked; raw GAP features not distributed, so no new full CKA recomputation.",
+  "scope": "Independent CPU reaggregation from exported curves; does not independently replay model inference or prove historical GPU execution."
+}

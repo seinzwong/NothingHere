@@ -1,0 +1,71 @@
+{
+  "signature": {
+    "model": {
+      "weights": "ResNet50_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth",
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "bytes": 102530333,
+      "layers": [
+        "conv1",
+        "layer1.2.conv2",
+        "layer2.2.conv1",
+        "layer3.0.conv3",
+        "layer3.3.conv2",
+        "layer4.0.conv1",
+        "layer4.2.conv3"
+      ]
+    },
+    "data_sha256": "60c4d2e53e7a536993d29f6d2b20961ee027ce8ecc516c3707da78e5a81fb560",
+    "preprocess": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+    "representation": "raw Conv2d output before following BN/ReLU; all-channel GAP; no feature standardization",
+    "torch": "2.9.1+cu130",
+    "torchvision": "0.24.1+cu130",
+    "deterministic": true,
+    "tf32": false
+  },
+  "sha256": "8ce966e638cdcbfb323a7f3c58d3ce37d6f24ec5a4bfcad3fad7201e64d82ea1",
+  "extraction": {
+    "device": "cuda",
+    "seconds": 5.077999999979511,
+    "batches": 125,
+    "batch_size": 8,
+    "raw_shapes": {
+      "L01": [
+        64,
+        112,
+        112
+      ],
+      "L02": [
+        64,
+        56,
+        56
+      ],
+      "L03": [
+        128,
+        28,
+        28
+      ],
+      "L04": [
+        1024,
+        14,
+        14
+      ],
+      "L05": [
+        256,
+        14,
+        14
+      ],
+      "L06": [
+        512,
+        14,
+        14
+      ],
+      "L07": [
+        2048,
+        7,
+        7
+      ]
+    },
+    "peak_allocated_vram_gib": 0.20993900299072266
+  }
+}

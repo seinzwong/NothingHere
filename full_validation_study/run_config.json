@@ -1,0 +1,95 @@
+{
+  "config": {
+    "engine_version": "full_validation_v2",
+    "dataset": "ILSVRC/imagenet-1k",
+    "revision": "49e2ee26f3810fb5a7536bbf732a7b07389a47b5",
+    "split": "validation",
+    "n_cka": 50000,
+    "n_insertion_deletion": 50000,
+    "layers": 7,
+    "seed": 5495,
+    "counts": [
+      0,
+      2509,
+      5018,
+      7526,
+      10035,
+      12544,
+      15053,
+      17562,
+      20070,
+      22579,
+      25088,
+      27597,
+      30106,
+      32614,
+      35123,
+      37632,
+      40141,
+      42650,
+      45158,
+      47667,
+      50176
+    ],
+    "preprocess": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+    "target": "FP32 original Top-1, fixed across all perturbations",
+    "baseline": "ImageNet mean RGB (zero normalized tensor)",
+    "auc": "probability trapezoidal area",
+    "gradcam_precision": "FP32",
+    "perturbation_precision": "FP16 only after measured pilot gate; otherwise FP32",
+    "cam_backward": "FP32 CUDA autograd; deterministic algorithms off in the performance stage; no bitwise guarantee",
+    "id_cuda_performance": "cuDNN benchmark on; deterministic algorithms off; fixed seeds, no bitwise guarantee",
+    "cka": "exact centered feature-space covariance, float64; no NxN matrices",
+    "random_ties": "seeded per-image random initial order; stable descending CAM sort",
+    "bootstrap": "1000 paired class-cluster resamples; exploratory class-composition sensitivity"
+  },
+  "resources": {
+    "vgg16": {
+      "weights": "VGG16_Weights.IMAGENET1K_V1",
+      "sha256": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+      "layers": [
+        "features.0",
+        "features.5",
+        "features.10",
+        "features.14",
+        "features.19",
+        "features.24",
+        "features.28"
+      ],
+      "url": "https://download.pytorch.org/models/vgg16-397923af.pth"
+    },
+    "resnet50": {
+      "weights": "ResNet50_Weights.IMAGENET1K_V1",
+      "sha256": "0676ba61b6795bbe1773cffd859882e5e297624d384b6993f7c9e683e722fb8a",
+      "layers": [
+        "conv1",
+        "layer1.2.conv2",
+        "layer2.2.conv1",
+        "layer3.0.conv3",
+        "layer3.3.conv2",
+        "layer4.0.conv1",
+        "layer4.2.conv3"
+      ],
+      "url": "https://download.pytorch.org/models/resnet50-0676ba61.pth"
+    },
+    "mobilenet_v2": {
+      "weights": "MobileNet_V2_Weights.IMAGENET1K_V1",
+      "sha256": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+      "layers": [
+        "features.0.0",
+        "features.4.conv.0.0",
+        "features.6.conv.2",
+        "features.9.conv.2",
+        "features.12.conv.1.0",
+        "features.15.conv.1.0",
+        "features.18.0"
+      ],
+      "url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth"
+    }
+  },
+  "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+  "torch": "2.9.1+cu130",
+  "torchvision": "0.24.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "started_at": "2026-10-29T17:00:36+0800"
+}

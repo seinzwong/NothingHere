@@ -1,0 +1,4 @@
+model,n,zero_maps,fp32_fallback_images,max_full_input_probability_error,curve_endpoint_checks,manual_auc_checks
+vgg16,50000,221,6,0.009779751300811768,True,True
+resnet50,50000,260,6,0.009931206703186035,True,True
+mobilenet_v2,50000,4219,234,0.009987324476242065,True,True
